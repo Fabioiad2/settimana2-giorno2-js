@@ -165,10 +165,10 @@ console.log(OGGETTI);
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-console.log();
-if(OGGETTI.includes('Zaino')){
-console.log("si trova in posizione",OGGETTI.indexOf('Zaino'))
-
+let cercato = "Zaino"
+let isZaino = OGGETTI.includes(cercato)
+if(isZaino){
+console.log(OGGETTI[2],"si trova in posizione",OGGETTI.indexOf(cercato))
 }
 else{
    console.log("non è presente");
