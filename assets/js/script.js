@@ -54,6 +54,8 @@ console.log("cap",UTENTE.indirizzo.cap)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let chiave = "nome"
+console.log(PERSONA[chiave],"chiave")
 
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
