@@ -182,14 +182,15 @@ else{
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const User = [
-   {name:"Mario",eta:25}
-   {name:"Luigi",eta:25}
-   {name:"Fabio",eta:19}
+   {name:"Mario",eta:25},
+   {name:"Luigi",eta:25},
+   {name:"Fabio",eta:19},
 ]
 
 
 for (let index = 0; index < User.length; index++) {
-   console.log(index);
+   const myUser = User[index]
+   console.table(myUser.name, myUser.eta,"anni");
    
 }
 
@@ -204,6 +205,31 @@ for (let index = 0; index < User.length; index++) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const prodotti = [{
+   nome:"Mela",
+   prezzo:"5",
+   disponibilita:true
+},
+{
+   nome:"borsa",
+   prezzo:"15",
+   disponibilita:false
+}
+]
+
+for(let i = 0; i < prodotti.length; i++){
+   const prodotto = prodotti[i]
+   if (prodotto.disponibilita === true && prodotto.prezzo < 10 ) {
+      console.log(`${prodotto.nome} prezzo minore di 10 e disponibile`);
+   }
+   else if(prodotto.disponibilita == true && prodotto.prezzo >= 10){
+      console.log(`${prodotto.nome} ${prodotto.prezzo}`)
+   }
+   else if(prodotto.disponibilita == false){
+      console.log(`esaurito ${prodotto.nome}`);
+      
+   }
+}
 
 /* --EXTRA-- ESERCIZIO 13 — Reverse manuale
    Array [1, 2, 3, 4, 5].
